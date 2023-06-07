@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap"
+		rel="stylesheet">
+	<title>Frontend Mentor | Interactive comments section</title>
+</head>
+
+<body>
+	<main class="mainContainer">
+		<!-- COMMENT1 CONTAINER -->
+		<div class="commentContainer commentContainer1">
+			<div class="profile profile1">
+				<img class="profilePic" src="" alt="imageAmyrobinson">
+				<span class="name name1"></span>
+				<span class="date"></span>
+			</div>
+			<div class="comment comment1"></div>
+			<button class="replyButton"><img class="imageReply" src="images/icon-reply.svg"
+					alt="imageReply">Reply</button>
+			<div class="upvotesContainer upvotesContainer1">
+				<button class="upvotePlus"><img src="images\icon-plus.svg" alt=""></button>
+				<div class="upvoteNumber"></div>
+				<button class="upvoteMinus"><img src="images\icon-minus.svg" alt=""></button>
+			</div>
+		</div>
+
+		<!-- COMMENT2 CONTAINER -->
+		<div class="commentContainer commentContainer2">
+			<div class="profile profile2">
+				<img class="profilePic" src="" alt="imageMaxblagun">
+				<span class="name name2"></span>
+				<span class="date"></span>
+			</div>
+			<div class="comment comment2"></div>
+			<button class="replyButton"><img class="imageReply" src="images/icon-reply.svg"
+					alt="imageReply">Reply</button>
+			<div class="upvotesContainer upvotesContainer1">
+				<button class="upvotePlus"><img src="images\icon-plus.svg" alt=""></button>
+				<div class="upvoteNumber"></div>
+				<button class="upvoteMinus"><img src="images\icon-minus.svg" alt=""></button>
+			</div>
+		</div>
+
+		<!-- REPLY CONTAINER -->
+		<div class="replyContainer">
+
+			<!-- Reply1 -->
+			<div class="commentContainer commentContainer3">
+				<div class="profile profile3">
+					<img class="profilePic" src="" alt="imageRamsesmiron">
+					<span class="name name3"></span>
+					<span class="date"></span>
+				</div>
+				<div class="comment comment3"></div>
+				<button class="replyButton"><img class="imageReply" src="images/icon-reply.svg"
+						alt="imageReply">Reply</button>
+				<div class="upvotesContainer upvotesContainer3">
+					<button class="upvotePlus"><img src="images\icon-plus.svg" alt=""></button>
+					<div class="upvoteNumber"></div>
+					<button class="upvoteMinus"><img src="images\icon-minus.svg" alt=""></button>
+				</div>
+			</div>
+
+			<!-- Reply2 -->
+			<div class="commentContainer commentContainer4">
+				<div class="profile profile4">
+					<img class="profilePic" src="" alt="imageJuliusomo">
+					<span class="name name4"></span>
+					<span class="you">you</span>
+					<span class="date"></span>
+				</div>
+				<div class="comment comment4"></div>
+				<button class="deleteButton"><img class="imageDelete" src="images/icon-delete.svg"
+						alt="imageReply">Delete</button>
+				<button class="editButton"><img class="imageEdit" src="images/icon-edit.svg"
+						alt="imageReply">Edit</button>
+				<div class="upvotesContainer upvotesContainer4">
+					<button class="upvotePlus"><img src="images\icon-plus.svg" alt=""></button>
+					<div class="upvoteNumber"></div>
+					<button class="upvoteMinus"><img src="images\icon-minus.svg" alt=""></button>
+				</div>
+			</div>
+		</div>
+		<!-- Comment input field- chatGPT-->
+		<div class="commentInput">
+			<textarea class="commentTextarea" placeholder="Add a comment"></textarea>
+			<div class="commentProfile">
+				<img class="profilePic" src="images/avatars/image-juliusomo.png" alt="Profile Picture">
+			</div>
+			<button class="sendButton">SEND</button>
+		</div>
+		<!-- Modal -->
+		<div class="modalContainer">
+			<div class="modal">
+				<p class="modalTop">Delete comment</p>
+				<p class="modalMid">Are you sure you want to felete this comment? This will remove the comment and can't
+					be undone.</p>
+				<div class="modalBottom">
+					<button class="cancelButton">NO, CANCEL</button>
+					<button class="confirmButton">YES, DELETE</button>
+				</div>
+			</div>
+		</div>
+
+	</main>
+	<script src="script.js"></script>
+</body>
+
+</html>
